@@ -35,7 +35,6 @@ TEST(Test, test03)
 
 	Grid grid01(board01);
 	ASSERT_EQ(grid01.columnLevel(1),1);
-/*
 	ASSERT_EQ(grid01.columnLevel(2),1);
 	ASSERT_EQ(grid01.columnLevel(3),0);
 	ASSERT_EQ(grid01.columnLevel(4),1);
@@ -52,7 +51,6 @@ TEST(Test, test03)
 	ASSERT_EQ(grid02.columnLevel(5),1);
 	ASSERT_EQ(grid02.columnLevel(6),1);
 	ASSERT_EQ(grid02.columnLevel(7),1);
-*/
 }
 
 int main(int argc, char* argv[])
