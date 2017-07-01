@@ -53,6 +53,25 @@ TEST(Test, test03)
 	ASSERT_EQ(grid02.columnLevel(7),1);
 }
 
+TEST(Test, test04)
+{
+	std::string board04a = "0000000";
+	std::string board04b = "0000000";
+	std::string board04c = "0000000";
+	std::string board04d = "0000102";
+	std::string board04e = "0000102";
+	std::string board04f = "2101122";
+
+	std::string board04 = board04f + board04e + board04d 
+		+ board04c + board04b + board04a;
+
+	Grid grid04(board04);
+
+	ASSERT_FALSE(grid04.hasFirstWon());
+	ASSERT_FALSE(grid04.hasSecondWon());
+}
+
+
 int main(int argc, char* argv[])
 {
 	::testing::InitGoogleTest(&argc, argv);
