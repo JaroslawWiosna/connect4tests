@@ -1,3 +1,5 @@
 add_subdirectory( test01 )
 add_subdirectory( cppVersion )
 add_subdirectory( ValidatorGrid )
+add_subdirectory( Game )
+add_subdirectory( Match )
